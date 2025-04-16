@@ -26,16 +26,7 @@ The dataset includes monthly records of the following variables:
 - **Crude Oil Price ($ per Barrel)**
 - **DXY Index**
 - **Trade Balance (India)**
-- **Event (e.g., Elections, Wars, Policy Changes)**
-
 Note: All macroeconomic indicators have been differenced or transformed as necessary to ensure stationarity for time series modeling.
-
-## Project Structure
-
-- `data/` – Contains the dataset used for analysis.
-- `notebooks/` – Jupyter notebooks with code for EDA, modeling, and testing.
-- `scripts/` – Python scripts for preprocessing, modeling, and evaluation.
-- `results/` – Output plots, forecast results, and evaluation metrics.
 
 ## Methodology
 
@@ -48,12 +39,11 @@ Note: All macroeconomic indicators have been differenced or transformed as neces
    - Performed correlation analysis.
 
 3. **Granger Causality Testing**
-   - Tested whether each variable Granger-causes gold prices using up to 8 lags.
+   - Tested whether each variable Granger-causes gold prices and Exchange rate using up to 8 lags.
    - Identified variables with significant predictive power.
 
 4. **Model Building**
-   - Built VAR models on differenced data.
-   - Explored CVAR (Johansen Cointegration) model for long-term relationships.
+   - Built VAR and ARIMA models on differenced data.
    - Used train-test split for model validation.
 
 5. **Model Evaluation**
@@ -62,14 +52,8 @@ Note: All macroeconomic indicators have been differenced or transformed as neces
 
 ## Requirements
 
-- Python 3.x
 - pandas
 - numpy
 - matplotlib / seaborn
 - statsmodels
 - scikit-learn
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
