@@ -1,4 +1,4 @@
-# Gold Price Forecasting Using Macroeconomic Indicators
+# Gold Price and Forex Forecasting Using Macroeconomic Indicators
 
 This project focuses on analyzing and forecasting gold prices using various global macroeconomic indicators. It involves data preprocessing, exploratory data analysis, Granger causality testing, and time series modeling using the VAR and CVAR (Johansen Cointegration) frameworks.
 
